@@ -21,7 +21,7 @@ public class MedianView implements View {
 
 	@Override
 	public void update(ArrayList<Double> numbers) {
-		median = BasicStats.median(BasicStats.getArrayDouble(numbers));
+		median = StatsCalculation.median(Helper.getArrayDouble(numbers));
 
 		//Set text
 		jtfMedian.setText("" + median);

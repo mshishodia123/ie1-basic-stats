@@ -21,7 +21,7 @@ public class MeanView implements View {
 
 	@Override
 	public void update(ArrayList<Double> numbers) {
-		mean = BasicStats.mean(BasicStats.getArrayDouble(numbers));
+		mean = StatsCalculation.mean(Helper.getArrayDouble(numbers));
 
     //Set text
     jtfMean.setText("" + mean);

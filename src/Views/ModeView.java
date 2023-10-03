@@ -21,7 +21,7 @@ public class ModeView implements View {
 
   @Override
   public void update(ArrayList<Double> numbers) {
-    mode = BasicStats.mode(BasicStats.getArrayDouble(numbers));
+    mode = StatsCalculation.mode(Helper.getArrayDouble(numbers));
 
     //Set text
     jtfMode.setText("" + mode);
